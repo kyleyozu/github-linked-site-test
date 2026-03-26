@@ -11,12 +11,15 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <a href="/" class="logo">SiteName</a>
-      <nav class="nav">
+      <a href="/" class="logo" aria-label="SiteName home">SiteName</a>
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -48,5 +51,13 @@
     </div>
   </footer>
 
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
