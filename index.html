@@ -30,11 +30,39 @@
   </section>
 
   <!-- Copy / About -->
-  <section class="about" id="about">
+  <section class="about" id="about" aria-labelledby="about-heading">
     <div class="container">
-      <h2>Why this exists</h2>
-      <p>This site is a test bed for a GitHub-connected deployment workflow. It covers the full loop: write code locally, open a pull request, get it reviewed, and deploy — all driven from the command line with Claude.</p>
-      <p>Every section of this page maps to a phase in the project. Issues were created automatically, branches were cut, and this PR was generated without leaving the editor.</p>
+      <div class="about__content">
+        <div class="about__text">
+          <p class="about__eyebrow">About the project</p>
+          <h2 id="about-heading">Why this exists</h2>
+          <p>This site is a test bed for a GitHub-connected deployment workflow. It covers the full loop: write code locally, open a pull request, get it reviewed, and deploy — all driven from the command line with Claude.</p>
+          <p>Every section of this page maps to a phase in the project. Issues were created automatically, branches were cut, and PRs were generated without leaving the editor.</p>
+        </div>
+        <ul class="about__features" id="features" aria-label="Key features">
+          <li>
+            <span class="feature__icon" aria-hidden="true">⚡</span>
+            <div>
+              <strong>Instant setup</strong>
+              <p>Repo created, issues filed, and branches cut in one command.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature__icon" aria-hidden="true">🔀</span>
+            <div>
+              <strong>PR-driven workflow</strong>
+              <p>Every change goes through a detailed pull request with test plans.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature__icon" aria-hidden="true">🚀</span>
+            <div>
+              <strong>Deploy on request</strong>
+              <p>Say the word and Claude commits, pushes, and opens the PR.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
