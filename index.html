@@ -39,12 +39,22 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer" id="contact" aria-label="Site footer">
     <div class="container">
-      <p>&copy; 2026 SiteName. Built with Claude Code.</p>
-      <nav class="footer-nav">
-        <a href="https://github.com/kyleyozu/github-linked-site-test" target="_blank" rel="noopener">GitHub</a>
-      </nav>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="logo" aria-label="SiteName home">SiteName</a>
+          <p class="footer__tagline">Built with Claude Code. Deployed via GitHub.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="https://github.com/kyleyozu/github-linked-site-test" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 SiteName. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
